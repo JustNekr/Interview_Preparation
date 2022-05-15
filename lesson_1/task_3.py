@@ -5,7 +5,16 @@
 а значене сгенеренное случайное число.  Вывести содержимое словаря. 
 (Усложненный вариант по желанию*): Не использовать стандартный модуль python random.
 """
+import random
+from pprint import pprint
 
 
-def my_generator(start, stop):
-    pass
+def my_generator(start, stop, limit):
+    pprint({f'elem_{i + 1}': random.randint(start, stop) for i in range(limit)})
+
+
+if __name__ == '__main__':
+    start = int(input('Введите начальную границй диапазона: '))
+    stop = int(input('Введите конечную границй диапазона: '))
+    limit = int(input('Введите длину последовательности: '))
+    my_generator(start, stop, limit)
