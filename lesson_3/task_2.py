@@ -4,3 +4,20 @@
 Если дробное — необходимо далее выполнить сравнение чисел до и после запятой.
 Если они совпадают, программа должна возвращать значение True, иначе False.
 """
+
+
+def idk_how_to_name_it():
+    num = input('Введите число: ')
+    num = str(float(num)).split('.')
+    if num[1] != '0':
+        print('Число дробное.')
+        if num[0] == num[1]:
+            return True
+        return False
+    print('Число целое.')
+
+
+if __name__ == '__main__':
+    print(idk_how_to_name_it())
+
+

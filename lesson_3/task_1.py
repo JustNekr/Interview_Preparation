@@ -4,3 +4,14 @@
 В функции необходимо реализовать поиск имени файла (с расширением), а затем «выделение» имени файла (без расширения).
 Расширений может быть несколько (например testfile.tar.gz).
 """
+import os
+
+x = os.path.abspath("task_1.py")
+
+
+def find_filename(path: str) -> str:
+    return path.split('\\')[-1].split('.')[0]
+
+
+if __name__ == '__main__':
+    print(find_filename(x))
