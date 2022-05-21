@@ -16,7 +16,7 @@ def dict_creator(keys: list, values: list) -> dict:
 
 if __name__ == '__main__':
     keys_list = [f'key_{num}' for num in range(int(input('ввкдите количество ключей: ')))]
-    values_list = [num for num in range(int(input('ввкдите количество значений: ')))]
+    values_list = [num for num in range(int(input('введите количество значений: ')))]
     print(dict_creator(keys_list, values_list))
 
 
